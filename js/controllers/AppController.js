@@ -30,12 +30,16 @@
                 url: "config/config.json",
                 dataType: "json",
                 success: function (resp) {
+<<<<<<< HEAD
                     AppConfig = resp;
                     boundariesURL = AppConfig.MapLayers[0].url;
                     crashURL = AppConfig.MapLayers[1].url;
                     crashURLNotLocated = AppConfig.MapLayers[2].url;
                     basemaps = AppConfig.BaseMaps;
                     crashFactors = AppConfig.CrashFactors;
+=======
+                    $scope.AppConfig = resp;
+>>>>>>> 832d8bd3ae9b8f6c3cc8a5ad57525196d13140c3
                     $scope.map = mapGen('map');
                     $scope.itemInfo = {};
                     $scope.isFirst = true;

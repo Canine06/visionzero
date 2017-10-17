@@ -30,9 +30,15 @@ var arrayUtils;
 var refLayer;
 var crashLayer;
 var notLocatedLayer;
+<<<<<<< HEAD
 var boundariesURL = null;
 var crashURL = null;
 var crashURLNotLocated = null;
+=======
+var boundariesURL = $scope.AppConfig.MapLayers[0].url;
+var crashURL = AppConfig.MapLayers[1].url;
+var crashURLNotLocated = AppConfig.MapLayers[2].url;
+>>>>>>> 832d8bd3ae9b8f6c3cc8a5ad57525196d13140c3
 var boundariesLayerInfo = [];
 var refLayerVisibility = [];
 var sfs;
