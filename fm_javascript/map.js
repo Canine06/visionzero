@@ -29,7 +29,7 @@ var arrayUtils;
 var refLayer;
 var crashLayer;
 var notLocatedLayer;
-var boundariesURL = AppConfig.MapLayers[0].url;
+var boundariesURL = $scope.AppConfig.MapLayers[0].url;
 var crashURL = AppConfig.MapLayers[1].url;
 var crashURLNotLocated = AppConfig.MapLayers[2].url;
 var boundariesLayerInfo = [];

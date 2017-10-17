@@ -30,7 +30,7 @@
                 url: "config/config.json",
                 dataType: "json",
                 success: function (resp) {
-                    AppConfig = resp;
+                    $scope.AppConfig = resp;
                     $scope.map = mapGen('map');
                     $scope.itemInfo = {};
                     $scope.isFirst = true;
