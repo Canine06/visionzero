@@ -1,0 +1,153 @@
+	header{
+		top: 0px;
+		height: 0em;
+	}
+	footer{
+		bottom: 0px;
+		height: 1.5em;
+	}
+	nav{
+		top: 2.5em;
+		margin: 0;
+		padding: 0;
+		height: 2.2em;
+	}
+	header .fm_title_bar {font-size: 1.5em; margin-top: 0px; height: 0px; }
+	.fm_container_main{
+		top: 4.8em;
+		bottom: 1.5em;
+	}
+
+	.fm_right_content{ left: 0; width: 300px;}
+	.fm_center_content{ right: 0; right: 300px;}
+
+	nav .fm_nav { width: 98%; margin: 0 auto; }
+
+	.fm_float_right{ float: right; }
+
+	.fm_basemaps_list{
+		top: 10em;
+		height: 190px;
+		width: 500px;
+		left: 30%;
+		overflow: auto;
+	}
+   
+    .fm_table_data{
+        bottom: 25px;
+		height: 190px;
+		width: 100%;
+		left: 0px;
+		overflow: auto;
+    }
+	.fm_measurement{
+		top: 10em;
+		height: 120px;
+		width: 250px;
+		left: 30%;
+	}
+	.fm_search{
+		left: 35%;
+		right: 35%;
+		top: 8em;
+        width:800px;
+        
+	}
+
+	.fm_button:hover .fm_basemap_icon{ background: url(fm_icons/map2.png) no-repeat; }
+	.fm_button:hover .fm_measure_icon{ background: url(fm_icons/ruler3.png) no-repeat; }
+	.fm_button:hover .fm_details_icon{ background: url(fm_icons/info2.png) no-repeat; }
+	.fm_button:hover .fm_legend_icon{ background: url(fm_icons/key.png) no-repeat; }
+	.fm_button:hover .fm_print_icon{ background: url(fm_icons/printer.png) no-repeat; }
+	.fm_button:hover .fm_share_icon{ background: url(fm_icons/share2.png) no-repeat; }
+	.fm_button:hover .fm_search_icon{ background: url(fm_icons/chart24.png) no-repeat; }
+	.fm_button:hover .fm_settings_icon{ background: url(fm_icons/settings.png) no-repeat; }
+    .fm_button:hover .fm_dates_icon{ background: url(fm_icons/dates2.png) no-repeat; }
+    .fm_button:hover .fm_filters_icon{ background: url(fm_icons/filter2.png) no-repeat; }
+    .fm_button:hover .fm_locations_icon{ background: url(fm_icons/earth2.png) no-repeat; }
+    .fm_button:hover .fm_routes_icon{ background: url(fm_icons/route2.png) no-repeat; }
+    .fm_button:hover .fm_table_icon{ background: url(fm_icons/Table24.png) no-repeat; }
+
+	.fm_button:hover{
+		color: black;
+		background-color: #fff;
+	}
+	.fm_button .fm_icon, .fm_button:hover .fm_icon{
+		width: 32px;
+		height: 32px;
+		display: inline-block;
+		background-size: 32px 32px;
+	}
+	.fm_icon{
+		position: relative;
+		top: 15px;
+	}
+
+	.fm_close{
+		width: 20px;
+		height: 20px;
+		margin: 10px;
+		background-size: 20px 20px;
+	}
+
+	.fm_button { margin: 0 3px; }
+	
+	/* desktop images */
+	.fm_basemap_icon{ background: url(fm_icons/map2-w.png) no-repeat; }
+	.fm_measure_icon{ background: url(fm_icons/ruler3-w.png) no-repeat; }
+	.fm_details_icon{ background: url(fm_icons/info2-w.png) no-repeat; }
+	.fm_legend_icon{ background: url(fm_icons/key-w.png) no-repeat; }
+	.fm_print_icon{ background: url(fm_icons/printer-w.png) no-repeat; }
+	.fm_share_icon{ background: url(fm_icons/share2-w.png) no-repeat; }
+	.fm_search_icon{ background: url(fm_icons/chart_white24.png) no-repeat; }
+	.fm_settings_icon{ background: url(fm_icons/settings-w.png) no-repeat; }
+    .fm_dates_icon{ background: url(fm_icons/dates.png) no-repeat; }
+    .fm_filters_icon{ background: url(fm_icons/filter.png) no-repeat; }
+    .fm_locations_icon{ background: url(fm_icons/earth.png) no-repeat; }
+    .fm_routes_icon{ background: url(fm_icons/route.png) no-repeat; }
+    ..fm_table_icon{ background: url(fm_icons/Table_w24.png) no-repeat; }
+
+
+
+	.fm_button_active .fm_basemap_icon{ background: url(fm_icons/map2.png) no-repeat; }
+	.fm_button_active .fm_measure_icon{ background: url(fm_icons/ruler3.png) no-repeat; }
+	.fm_button_active .fm_details_icon{ background: url(fm_icons/info2.png) no-repeat; }
+	.fm_button_active .fm_legend_icon{ background: url(fm_icons/key.png) no-repeat; }
+	.fm_button_active .fm_print_icon{ background: url(fm_icons/printer.png) no-repeat; }
+	.fm_button_active .fm_share_icon{ background: url(fm_icons/share2.png) no-repeat; }
+	.fm_button_active .fm_search_icon{ background: url(fm_icons/chart24.png) no-repeat; }
+	.fm_button_active .fm_settings_icon{ background: url(fm_icons/settings.png) no-repeat; }
+    .fm_button_active .fm_dates_icon{ background: url(fm_icons/dates2.png) no-repeat; }
+    .fm_button_active .fm_filters_icon{ background: url(fm_icons/filter2.png) no-repeat; }
+    .fm_button_active .fm_locations_icon{ background: url(fm_icons/earth2.png) no-repeat; }
+    .fm_button_active .fm_routes_icon{ background: url(fm_icons/route2.png) no-repeat; }
+    .fm_button_active .fm_table_icon{ background: url(fm_icons/Table24.png) no-repeat; }
+
+	.fm_close{ background: url(fm_icons/close.png) no-repeat; }
+
+	/** IE fixes - do not override **/
+	body{ min-width: 768px; overflow-x : auto;}
+	
+	.fm_right_content{
+		border-left: 1px solid #222;
+	}
+	.fm_button{
+		position: relative;
+		float: left;
+	}
+	.fm_button.fm_float_right{
+		position: relative;
+		float: right;
+	}
+	.fm_button .fm_icon_text{
+		position: relative;
+		top: 40px;
+		margin: 0 3px 0 3px;
+	}
+    .fm_left_text{
+    color:white;
+}
+    .fm_left_text.bold_text{
+    font-weight: bold;
+    font-size:medium;
+}

@@ -1,0 +1,63 @@
+﻿{
+  "BaseMap": "Imagery",
+  "MapLayers": [
+    {
+      "url": "//gis.coverlab.org/arcgis/rest/services/vzmaps/Boundaries_WebMercator/MapServer/",
+      "label": "Boundaries URL"
+    },
+    {
+      "url": "//gis.coverlab.org/arcgis/rest/services/vzmaps/crash_service/MapServer/0",
+      "label": "Crash URL"
+    },
+    {
+      "url": "//gis.coverlab.org/arcgis/rest/services/vzmaps/crash_service/MapServer/1",
+      "label": "Crashes Not Located URL"
+    },
+    {
+      "url": "//gis.coverlab.org/arcgis/rest/services/vzmaps/crash_service/MapServer/2",
+      "label": "Min Max Dates URL"
+    }
+  ],
+  "BaseMaps": {
+    "currentVersion": 10.01,
+    "folders": [ "Canvas", "Demographics", "Elevation", "Reference", "Specialty" ],
+    "services": [
+      {
+        "name": "Reference/World_Transportation",
+        "type": "MapServer",
+        "image": "street-imagery.png",
+        "title": "Street Map w/ Imagery"
+      },
+      {
+        "name": "World_Imagery",
+        "type": "MapServer",
+        "image": "bm-imagery.jpg",
+        "title": "Imagery"
+      },
+      {
+        "name": "World_Street_Map",
+        "type": "MapServer",
+        "image": "bm-street.jpg",
+        "title": "Street Map"
+      },
+      {
+        "name": "World_Topo_Map",
+        "type": "MapServer",
+        "image": "bm-topo.jpg",
+        "title": "Topography"
+      }
+    ]
+  },
+  "CrashFactors":  [{ "fieldname": "ALCOHOL_FL", "layername": "Alcohol", "R": 197, "G": 27, "B": 125, "A": 1, "icon": "fm_style/fm_icons/newicons/alcohol-selected-30.png", "css_class": "fm_factor_alcohol" },
+    { "fieldname": "CMV", "layername": "Commercial Vehicle", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/truck-selected-30.png", "css_class": "fm_factor_truck" },
+    { "fieldname": "DISTRACTED_FLAG", "layername": "Distracted", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/dd-selected-30.png", "css_class": "fm_factor_distracted" },
+    { "fieldname": "LANE_FL", "layername": "Lane Departure", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/lane-selected-30.png", "css_class": "fm_factor_lane" },
+    { "fieldname": "MOTORCYCLE_FLAG", "layername": "Motorcycle", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/motorcycle-selected-30.png", "css_class": "fm_factor_motorcycle" },
+    { "fieldname": "OLDER_DRIV", "layername": "65 or older", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/60orolder-selected-30.png", "css_class": "fm_factor_olderdriver" },
+    { "fieldname": "PEDALCYCLIST_FLAG", "layername": "Bicycle", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/bike-selected-30.png", "css_class": "fm_factor_bike" },
+    { "fieldname": "PEDESTRIAN_FLAG", "layername": "Pedestrian", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/pedestrian-selected-30.png", "css_class": "fm_factor_pedestrian" },
+    { "fieldname": "SPEED_FL", "layername": "Speed", "R": 184, "G": 225, "B": 134, "A": 1, "icon": "fm_style/fm_icons/newicons/speeding-selected-30.png", "css_class": "fm_factor_pedestrian" },
+    { "fieldname": "TEEN_DRIVE", "layername": "Under 21", "R": 77, "G": 146, "B": 33, "A": 1, "icon": "fm_style/fm_icons/newicons/under21-selected-30.png", "css_class": "fm_factor_under21" },
+    { "fieldname": "UNBELTED_F", "layername": "Unbelted", "R": 0, "G": 128, "B": 0, "A": 1, "icon": "fm_style/fm_icons/newicons/seatbelt-selected-30.png", "css_class": "fm_factor_unbelted" }
+]
+}
