@@ -19,6 +19,7 @@ dojo.require("esri.Color");
 dojo.require("esri.renderer");
 
 var map;
+var AppConfig = null;
 var printer = null;
 var currentBasemap;
 var geocoder;
@@ -29,9 +30,9 @@ var arrayUtils;
 var refLayer;
 var crashLayer;
 var notLocatedLayer;
-var boundariesURL = $scope.AppConfig.MapLayers[0].url;
-var crashURL = AppConfig.MapLayers[1].url;
-var crashURLNotLocated = AppConfig.MapLayers[2].url;
+var boundariesURL = null;
+var crashURL = null;
+var crashURLNotLocated = null;
 var boundariesLayerInfo = [];
 var refLayerVisibility = [];
 var sfs;
@@ -58,9 +59,9 @@ var sym;
 var selectedLayerName;
 var mapClicked;
 var featureSetVision, queryVisionTask, queryVision;
-var basemaps = AppConfig.Basemaps;
+var basemaps = null;
 
-var crashFactors = AppConfig.CrashFactors;
+var crashFactors = null;
 
 dojo.ready(function () {
     //clusterLayer = new extras.ClusterLayer();
@@ -364,6 +365,7 @@ function onMapLoaded() {
     map.on("extent-change", trackExtent);
 
     initShare();
+    getBasemaps();
 
 }
 //function clearFeatTable() {
@@ -723,7 +725,7 @@ function updateCrashLayer() {
 
 //**query from and to dates of dataset
 function getDates() {
-    var queryTaskdate = new esri.tasks.QueryTask(AppConfig.MapLayers[3]);
+    var queryTaskdate = new esri.tasks.QueryTask(AppConfig.MapLayers[3].url);
 
     var querydate = new esri.tasks.Query();
     querydate.outFields = ["MINDATE, MAXDATE"];
@@ -1710,7 +1712,7 @@ function setUpGraphic(graphic) {
 
 //REST call to obtain list of layers available in service
 function getFirstViewByContent() {
-    if (boundariesURL.length == 0) {
+    if (boundariesURL == "") {
         return;
     }
 

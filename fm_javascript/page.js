@@ -795,7 +795,7 @@ function responsive() {
         fm.generateEmbedCode();
 
         fm.setResponsive();
-        getBasemaps();
+        //getBasemaps();
 
         //init info
         $(".fm_description").show();
